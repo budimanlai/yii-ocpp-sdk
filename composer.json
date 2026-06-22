@@ -1,0 +1,41 @@
+{
+    "name": "carisoftware/yii2-ocpp-sdk",
+    "description": "Yii2 extension for OCPP (Open Charge Point Protocol) SDK - supports OCPP 1.6 and 2.0.1",
+    "keywords": ["yii2", "ocpp", "ev", "charging", "websocket", "electric vehicle"],
+    "homepage": "https://github.com/carisoftware/yii2-ocpp-sdk",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carisoftware",
+            "email": "dev@carisoftware.id"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "yiisoft/yii2": "~2.0",
+        "ratchet/pawl": "^0.4",
+        "ratchet/ratchet": "^0.4",
+        "react/event-loop": "^1.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "yiisoft/yii2-dev": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "carisoftware\\ocpp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "carisoftware\\ocpp\\tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "bootstrap": "carisoftware\\ocpp\\Bootstrap"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
