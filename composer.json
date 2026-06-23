@@ -4,7 +4,7 @@
     "keywords": ["yii2", "ocpp", "ev", "charging", "electric vehicle"],
     "homepage": "https://github.com/carisoftware/yii2-ocpp-sdk",
     "type": "yii2-extension",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "authors": [
         {
@@ -38,10 +38,7 @@
             "carisoftware\\ocpp\\tests\\": "tests/"
         }
     },
-    "extra": {
-        "bootstrap": "carisoftware\\ocpp\\Bootstrap"
-    },
-    "minimum-stability": "stable",
+"minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
