@@ -1,5 +1,13 @@
 # Release Notes
 
+## 1.0.2 — 2026-06-23
+
+### Fixes
+
+- `remoteStop()` — rename parameter `$transactionId` → `$ocppTransactionId` dan body key menjadi `ocpp_transaction_id` (sebelumnya `transaction_id`)
+
+---
+
 ## 1.0.0 — 2026-06-23
 
 Initial release.

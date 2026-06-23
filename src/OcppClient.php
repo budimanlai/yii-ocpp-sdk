@@ -217,17 +217,17 @@ class OcppClient extends Api3rdBase
      * Waits up to 30 seconds for the charger's `StopTransaction` message.
      * If the transaction already has `status = "Ended"`, returns stored data immediately.
      *
-     * @param string $chargePointId OCPP identity string.
-     * @param int    $transactionId OCPP transaction ID (`oc_transaction.id`).
+     * @param string $chargePointId     OCPP identity string.
+     * @param int    $ocppTransactionId OCPP transaction ID (`oc_transaction.id`).
      * @return array{status: string, ocpp_transaction_id: int, csms_transaction_id: int,
      *               charge_point_id: string, meter_start: int, meter_stop: int|null,
      *               total_wh: int|null, duration: int|null}
      * @throws \Exception If charger did not respond (HTTP 502).
      */
-    public function remoteStop(string $chargePointId, int $transactionId): array
+    public function remoteStop(string $chargePointId, int $ocppTransactionId): array
     {
         return $this->data($this->post("chargers/{$chargePointId}/remote-stop", [
-            'transaction_id' => $transactionId,
+            'ocpp_transaction_id' => $ocppTransactionId,
         ]));
     }
 
