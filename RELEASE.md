@@ -1,5 +1,18 @@
 # Release Notes
 
+## 1.0.3 — 2026-10-20
+
+### Breaking Changes
+
+- Nama package berubah dari `carisoftware/yii2-ocpp-sdk` menjadi `budimanlai/yii2-ocpp-sdk`
+- Namespace berubah dari `carisoftware\ocpp` menjadi `budimanlai\ocpp` — update semua referensi `carisoftware\ocpp\OcppClient` ke `budimanlai\ocpp\OcppClient`
+
+### Changes
+
+- Repository pindah ke [github.com/budimanlai/yii-ocpp-sdk](https://github.com/budimanlai/yii-ocpp-sdk)
+
+---
+
 ## 1.0.2 — 2026-06-23
 
 ### Fixes

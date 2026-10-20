@@ -12,7 +12,7 @@ Supports OCPP 1.6 and 2.0.1 over REST.
 ## Installation
 
 ```bash
-composer require carisoftware/yii2-ocpp-sdk
+composer require budimanlai/yii2-ocpp-sdk
 ```
 
 ## Database

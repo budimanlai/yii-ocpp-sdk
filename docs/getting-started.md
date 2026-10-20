@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-composer require carisoftware/yii2-ocpp-sdk
+composer require budimanlai/yii2-ocpp-sdk
 ```
 
 ## Requirements
@@ -26,7 +26,7 @@ Add to your application config (`config/main.php` or `config/web.php`):
 ```php
 'components' => [
     'ocpp' => [
-        'class' => carisoftware\ocpp\OcppClient::class,
+        'class' => budimanlai\ocpp\OcppClient::class,
         'baseUrl' => 'http://localhost:8100',
     ],
 ],
@@ -41,14 +41,14 @@ Yii::$app->ocpp->getServerStatus();
 ### Direct instantiation
 
 ```php
-$client = new \carisoftware\ocpp\OcppClient();
+$client = new \budimanlai\ocpp\OcppClient();
 $client->baseUrl = 'http://localhost:8100';
 ```
 
 ### With explicit user ID
 
 ```php
-$client = new \carisoftware\ocpp\OcppClient(userId: 42);
+$client = new \budimanlai\ocpp\OcppClient(userId: 42);
 $client->baseUrl = 'http://localhost:8100';
 ```
 

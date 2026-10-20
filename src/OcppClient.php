@@ -1,6 +1,6 @@
 <?php
 
-namespace carisoftware\ocpp;
+namespace budimanlai\ocpp;
 
 use budimanlai\yii2pkg\library\Api3rdBase;
 use Yii;
